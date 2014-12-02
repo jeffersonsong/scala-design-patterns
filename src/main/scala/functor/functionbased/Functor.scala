@@ -1,7 +1,7 @@
 package functor.functionbased
 
 trait Functor[T[_]] {
-  def fmap[A, B](list: List[A])(f: A=> B): List[B] = list map f
+  def fmap[A, B](list: T[A])(f: A=> B): T[B]
 }
 
 object ListFunctor extends Functor[List] {
