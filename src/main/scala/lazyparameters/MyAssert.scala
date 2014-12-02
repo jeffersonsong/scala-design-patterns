@@ -10,7 +10,7 @@ object MyAssert {
     if (assertionEnabled && !predicate) throw new AssertionError
 }
 
-object Test extends App {
+object Test2 extends App {
   import MyAssert._
 
   //basicAssert(5 < 3)
